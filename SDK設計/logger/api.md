@@ -9,7 +9,7 @@
 |          |     |
 | -------- | --- |
 | 函數参数 |   x  |
-| 返回值   |   bool  |
+| 返回值   |  LoggerDispatcher  |
 | 异常响应 |  ExceptionResponse   |
 
 ## disconnect
@@ -20,26 +20,6 @@
 | -------- | --- |
 | 函數参数 |   x  |
 | 返回值   |  bool   |
-| 异常响应 |   ExceptionResponse  |
-
-## open
-
-- url: /logger/submit/open
-
-|          |     |
-| -------- | --- |
-| 函數参数 |   x  |
-| 返回值   |   LoggerDispatcher  |
-| 异常响应 |  ExceptionResponse   |
-
-## close
-
-- url: /logger/submit/close
-
-|          |     |
-| -------- | --- |
-| 函數参数 |   x  |
-| 返回值   |    bool |
 | 异常响应 |   ExceptionResponse  |
 
 ## log
