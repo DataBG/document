@@ -17,17 +17,17 @@
 
 ```ts
 enum EventType {
-    USER_CLICK = 'user_click',
-    USER_STAY = 'user_stay',
-    PAGE_ENTER = 'page_enter',
-    PAGE_STAY = 'page_stay',
-    VIDEO_OPEN = 'video_open',
-    VIDEO_STAY = 'video_stay',
-    FORM_PICK = 'form_pick',
-    FORM_STAY = 'form_stay',
-    API_REQUEST = 'api_request',
-    API_RESPONSE = 'api_response',
-    CUSTOM = 'custom',
+    USER_CLICK = 'USER_CLICK',
+    USER_STAY = 'USER_STAY',
+    PAGE_ENTER = 'PAGE_ENTER',
+    PAGE_STAY = 'PAGE_STAY',
+    VIDEO_OPEN = 'VIDEO_OPEN',
+    VIDEO_STAY = 'VIDEO_STAY',
+    FORM_PICK = 'FORM_PICK',
+    FORM_STAY = 'FORM_STAY',
+    API_REQUEST = 'API_REQUEST',
+    API_RESPONSE = 'API_RESPONSE',
+    CUSTOM = 'CUSTOM',
 }
 ```
 
@@ -48,9 +48,9 @@ interface EventSubmitBody {
 
 ```ts
 enum QueryMethod {
-    COUNT = 'count', // 数量统计
-    DURATION = 'duration', // 时长统计
-    RATE = 'rate', // 比率统计
+    COUNT = 'COUNT', // 数量统计
+    DURATION = 'DURATION', // 时长统计
+    RATE = 'RATE', // 比率统计
 }
 ```
 
@@ -58,10 +58,10 @@ enum QueryMethod {
 
 ```ts
 enum QueryUnit {
-    USER = 'user',
-    YEAR = 'year',
-    MONTH = 'month',
-    DAY = 'day',
+    USER = 'USER',
+    YEAR = 'YEAR',
+    MONTH = 'MONTH',
+    DAY = 'DAY',
 }
 ```
 

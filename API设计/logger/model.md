@@ -13,11 +13,11 @@
 
 ```ts
 enum MessageType {
-    LOG = 'log',
-    INFO = 'info',
-    WARN = 'warn',
-    ERROR = 'error',
-    DEBUG = 'debug'
+    LOG = 'LOG',
+    INFO = 'INFO',
+    WARN = 'WARN',
+    ERROR = 'ERROR',
+    DEBUG = 'DEBUG',
 }
 ```
 
