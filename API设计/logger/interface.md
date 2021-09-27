@@ -14,15 +14,15 @@
 | -------- | ------------------------------ |
 | 请求方法 | POST                           |
 | 路由参数 | env: Env<br/>type: MessageType |
-| 请求体   | LogSubmitBody              |
+| 请求体   | LogSubmitBody                  |
 | 响应对象 | LogModel                       |
 | 异常响应 | ExceptionResponse              |
 
 ## 2. 查询日志 /logger/query
 
-|          |                                                                                                                                       |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| 请求方法 | GET                                                                                                                                   |
-| 查询参数 | appName: string<br/>env: Env<br/>type: MessageType<br/>namespace: string<br/>regexp: string<br/>startTime: number<br/>endTime: number |
-| 响应对象 | LogModel[]                                                                                                                            |
-| 异常响应 | ExceptionResponse                                                                                                                     |
+|          |                                                                                                                                        |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| 请求方法 | GET                                                                                                                                    |
+| 查询参数 | appName: string<br/>env: Env<br/>type: MessageType<br/>userId: number<br/>namespace: string<br/>keyword: string<br/>startTime: number<br/>endTime: number |
+| 响应对象 | LogModel[]                                                                                                                             |
+| 异常响应 | ExceptionResponse                                                                                                                      |
