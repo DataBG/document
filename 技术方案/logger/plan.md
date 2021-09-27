@@ -4,15 +4,59 @@
 
 該 SDK 設計主要思路如下：
 
-1. LoggerDispatcher 為具體包含日誌相關操作的類
+1. Logger 為具體包含日誌相關操作的對象
 
-2. LoggerDispatcher 應用單例模式
+2. 通過 `init` 管理並初始化好 SDK 環境，並且負責建立與後端連接
 
-3. 通過 `connect` api 返回給調用方 LoggerDispatcher 實例
+3. Logger 具體對外提供 `log`, `info`, `warn`, `error`, `debug` api
 
-4. 通過 `disconnect` 註銷 LoggerDispatcher 實例
+4. 另外需單獨暴露一個 `query` api
 
-5. LoggerDispatcher 具體對外提供 `log`, `info`, `warn`, `error`, `debug`, `query` api
+## API 設計
 
-6. LoggerDispatcher 負責初始化關於環境參數、與後端連接、異常處理表現、以及對返回值的預處理(如有需要)
+### init
 
+```ts
+const init = (def: DEF) => {
+  // 初始化 SDK 環境
+  // 建立與後端連接
+};
+```
+
+### log, info, warn, error, debug
+
+- log, info, warn, error, debug 用 `f` 表示
+
+```ts
+const f = (env: ENV, type: MessageType.f, logger: LogSubmitBody) => {
+  // 發送請求邏輯
+};
+```
+
+### query
+
+```ts
+const query = (
+  appName: string,
+  env: Env,
+  type: MessageType,
+  namespace: string,
+  keyword: string,
+  startTime: string,
+  endTime: string
+) => {
+  // 發送請求邏輯
+};
+```
+
+## model
+
+- DEF
+
+```ts
+interface DEF {
+  appName: string;
+  namespace: string;
+  env: ENV;
+}
+```
