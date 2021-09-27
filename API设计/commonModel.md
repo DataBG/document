@@ -12,9 +12,9 @@
 
 ```ts
 enum Env {
-    TEST = 'test', // 测试环境
-    PRE = 'pre', // 预发环境
-    PROD = 'prod', // 线上环境
+    TEST = 'TEST', // 测试环境
+    PRE = 'PRE', // 预发环境
+    PROD = 'PROD', // 线上环境
 }
 ```
 
