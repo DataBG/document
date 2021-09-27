@@ -5,7 +5,7 @@
 - [logger Model](#logger-model)
   - [enum MessageType](#enum-messagetype)
   - [interface LogSubmitBody](#interface-logsubmitbody)
-  - [interface LoggerInfo](#interface-loggerinfo)
+  - [interface LogModel](#interface-logmodel)
 
 <!-- /TOC -->
 
@@ -26,13 +26,13 @@ enum MessageType {
 ```ts
 interface LogSubmitBody {
     appName: string;
-    userId: number;
-    namespace: string;
+    userId?: number;
+    namespace?: string;
     text: string;
 }
 ```
 
-## interface LoggerInfo
+## interface LogModel
 
 ```ts
 interface LogModel {
