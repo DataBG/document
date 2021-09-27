@@ -23,6 +23,6 @@
 |          |                                                                                                                                        |
 | -------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | 请求方法 | GET                                                                                                                                    |
-| 查询参数 | appName: string<br/>env: Env<br/>type: MessageType<br/>namespace: string<br/>keyword: string<br/>startTime: number<br/>endTime: number |
+| 查询参数 | appName: string<br/>env: Env<br/>type: MessageType<br/>userId: number<br/>namespace: string<br/>keyword: string<br/>startTime: number<br/>endTime: number |
 | 响应对象 | LogModel[]                                                                                                                             |
 | 异常响应 | ExceptionResponse                                                                                                                      |
