@@ -2,25 +2,15 @@
 
 關於文檔中的類型設計參考 /API 設計 中的相關文檔。
 
-## connect
+## init
 
 - url: /logger/submit/connect
 
 |          |     |
 | -------- | --- |
 | 函數参数 |   x  |
-| 返回值   |  LoggerDispatcher  |
+| 返回值   |  bool  |
 | 异常响应 |  ExceptionResponse   |
-
-## disconnect
-
-- url: /logger/submit/disconnect
-
-|          |     |
-| -------- | --- |
-| 函數参数 |   x  |
-| 返回值   |  bool   |
-| 异常响应 |   ExceptionResponse  |
 
 ## log
 
@@ -78,7 +68,7 @@
 
 |          |                                                                                                                                       |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| 函數参数 | appName: string<br/>env: Env<br/>type: MessageType<br/>namespace: string<br/>regexp: string<br/>startTime: string<br/>endTime: string |
+| 函數参数 | appName: string<br/>env: Env<br/>type: MessageType<br/>namespace: string<br/>keyword: string<br/>startTime: string<br/>endTime: string |
 | 返回值   | res: LogModel[]                                                                                                                       |
 | 异常响应 | ExceptionResponse                                                                                                                     |
 
