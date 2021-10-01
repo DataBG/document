@@ -4,71 +4,78 @@
 
 ## init
 
-- url: /logger/submit/connect
-
-|          |     |
-| -------- | --- |
-| 函數参数 |   x  |
-| 返回值   |  bool  |
-| 异常响应 |  ExceptionResponse   |
+|          |                   |
+| -------- | ----------------- |
+| 函數参数 | def: Def          |
+| 返回值   | void              |
+| 异常响应 | ExceptionResponse |
 
 ## log
 
 - url: /logger/submit/{env}/log
 
-|          |                                                      |
-| -------- | ---------------------------------------------------- |
-| 函數参数 | env: Env<br/>type: `LOG`<br /> logger: LogSubmitBody |
-| 返回值   | res: LogModel                                        |
-| 异常响应 | ExceptionResponse                                    |
+|          |                                       |
+| -------- | ------------------------------------- |
+| 函數参数 | text: string <br />namespace?: string |
+| 返回值   | res: LogModel                         |
+| 异常响应 | ExceptionResponse                     |
 
 ## info
 
 - url: /logger/submit/{env}/info
 
-|          |                                                       |
-| -------- | ----------------------------------------------------- |
-| 函數参数 | env: Env<br/>type: `INFO`<br /> logger: LogSubmitBody |
-| 返回值   | res: LogModel                                         |
-| 异常响应 | ExceptionResponse                                     |
+|          |                                       |
+| -------- | ------------------------------------- |
+| 函數参数 | text: string <br />namespace?: string |
+| 返回值   | res: LogModel                         |
+| 异常响应 | ExceptionResponse                     |
 
 ## warn
 
 - url: /logger/submit/{env}/warn
 
-|          |                                                       |
-| -------- | ----------------------------------------------------- |
-| 函數参数 | env: Env<br/>type: `INFO`<br /> logger: LogSubmitBody |
-| 返回值   | res: LogModel                                         |
-| 异常响应 | ExceptionResponse                                     |
+|          |                                       |
+| -------- | ------------------------------------- |
+| 函數参数 | text: string <br />namespace?: string |
+| 返回值   | res: LogModel                         |
+| 异常响应 | ExceptionResponse                     |
 
 ## error
 
 - url: /logger/submit/{env}/error
 
-|          |                                                        |
-| -------- | ------------------------------------------------------ |
-| 函數参数 | env: Env<br/>type: `ERROR`<br /> logger: LogSubmitBody |
-| 返回值   | res: LogModel                                          |
-| 异常响应 | ExceptionResponse                                      |
+|          |                                       |
+| -------- | ------------------------------------- |
+| 函數参数 | text: string <br />namespace?: string |
+| 返回值   | res: LogModel                         |
+| 异常响应 | ExceptionResponse                     |
 
 ## debug
 
 - url: /logger/submit/{env}/debug
 
-|          |                                                        |
-| -------- | ------------------------------------------------------ |
-| 函數参数 | env: Env<br/>type: `DEBUG`<br /> logger: LogSubmitBody |
-| 返回值   | res: LogModel                                          |
-| 异常响应 | ExceptionResponse                                      |
+|          |                                       |
+| -------- | ------------------------------------- |
+| 函數参数 | text: string <br />namespace?: string |
+| 返回值   | res: LogModel                         |
+| 异常响应 | ExceptionResponse                     |
 
 ## query
 
+- url: /logger/query/all
+
+|          |                   |
+| -------- | ----------------- |
+| 函數参数 | param: IQuery     |
+| 返回值   | res: LogModel[]   |
+| 异常响应 | ExceptionResponse |
+
+## queryAll
+
 - url: /logger/query
 
-|          |                                                                                                                                       |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| 函數参数 | appName: string<br/>env: Env<br/>type: MessageType<br/>namespace: string<br/>keyword: string<br/>startTime: string<br/>endTime: string |
-| 返回值   | res: LogModel[]                                                                                                                       |
-| 异常响应 | ExceptionResponse                                                                                                                     |
-
+|          |                   |
+| -------- | ----------------- |
+| 函數参数 | x                 |
+| 返回值   | res: LogModel[]   |
+| 异常响应 | ExceptionResponse |
